@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/drawer_border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="16dp"
+        android:background="@drawable/header_bkg"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/baseline_calendar_month_24"
+            app:tint="#00BCD4"
+            android:paddingLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sistema de Tareas"
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inicio_nav_superadmin"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:drawablePadding="8dp"
+            android:text="Inicio"
+            android:textStyle="bold|italic"
+            android:textColor="#FF8000"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/home_fill0_wght400_grad0_opsz24"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista_usuarios_nav"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF8000"
+            android:text="Todas las Tareas"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/format_list_bulleted_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="8dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nuevo_admin_nav"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF8000"
+            android:text="Nueva Tarea"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:tint="#FF8000"
+            android:drawablePadding="8dp"
+            app:drawableLeftCompat="@drawable/baseline_add_circle_outline_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista_logs_nav"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF8000"
+            android:text="Logs"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:drawableLeft="@drawable/format_list_bulleted_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="8dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_gravity="center"
+        android:layout_width="370dp"
+        android:layout_height="1.5dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cerrar_sesion"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF8000"
+            android:text="Cerrar Sesión"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/logout_fill0_wght400_grad0_opsz24"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
